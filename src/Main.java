@@ -6,9 +6,10 @@ public class Main {
 		double height; //身長
 		double weight; //体重
 
-		height = 1720;
-		weight = 460;
+		height = 172;
+		weight = 46;
 
+		System.out.println(height * height * 22);
 		System.out.println(weight/(height*height));
 
 	}
