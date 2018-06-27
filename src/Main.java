@@ -1,17 +1,30 @@
 
 public class Main {
 
+//////////////////////課題9///////////////////////////
 
-//////////////////////課題8///////////////////////////
-	public static void main(String[] args) {
+//	内容：メソッドを呼び出して結果を画面に表示させなさい
 
-		boolean a = true;
-		boolean b = true;
-		System.out.println(a&&b);
-		System.out.println(a||b);
-		System.out.println(a!=b);
+	public static void main(String[]args) {
+
+		printDayTime(); //printDayTimeの処理(メソッド)をmainに呼び出す
+	}
+	static void printDayTime() {
+		java.util.Calendar cal = java.util.Calendar.getInstance();
+		java.util.Date date = cal.getTime();
+		System.out.println(date);
 	}
 }
+//////////////////////課題8///////////////////////////
+//	public static void main(String[] args) {
+//
+//		boolean a = true;
+//		boolean b = true;
+//		System.out.println(a&&b);
+//		System.out.println(a||b);
+//		System.out.println(a!=b);
+//	}
+//}
 //////////////////////////////////////////////////////
 //		if(a==b) {
 //			System.out.println(true);
