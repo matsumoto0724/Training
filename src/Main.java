@@ -1,20 +1,32 @@
 
 public class Main {
 
+//////////////////////課題10///////////////////////////
+//	内容：適当な引数を指定してメソッドを呼び出して結果を画面に表示させなさい
+
+	public static void main(String[]args) {
+
+		calcTriangle(4.5f,3.5f); //課題9と同様で引数に数字を入れる(末尾にfでfloat判別)
+	}
+	static void calcTriangle(float bottom,float height) {
+		float area = (bottom * height) / 2;
+		System.out.println("底辺が" + bottom + "、高さが" + height + "の三角形の面積は" + area);
+	}
+}
 //////////////////////課題9///////////////////////////
 
 //	内容：メソッドを呼び出して結果を画面に表示させなさい
 
-	public static void main(String[]args) {
-
-		printDayTime(); //printDayTimeの処理(メソッド)をmainに呼び出す
-	}
-	static void printDayTime() {
-		java.util.Calendar cal = java.util.Calendar.getInstance();
-		java.util.Date date = cal.getTime();
-		System.out.println(date);
-	}
-}
+//	public static void main(String[]args) {
+//
+//		printDayTime(); //printDayTimeの処理(メソッド)をmainに呼び出す
+//	}
+//	static void printDayTime() {
+//		java.util.Calendar cal = java.util.Calendar.getInstance();
+//		java.util.Date date = cal.getTime();
+//		System.out.println(date);
+//	}
+//}
 //////////////////////課題8///////////////////////////
 //	public static void main(String[] args) {
 //
