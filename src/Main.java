@@ -1,19 +1,42 @@
 
 public class Main {
 
+//////////////////////課題7///////////////////////////
 	public static void main(String[] args) {
 
-		double height; //身長
-		double weight; //体重
+		int a = 1;
+		int b = 2;
 
-		height = 172;
-		weight = 46;
-
-		System.out.println(height * height * 22);
-		System.out.println(weight/(height*height));
-
+		System.out.println("aはbより大きいか → " +(a>b));
+		System.out.println("aとbは等しいか → "+(a==b));
+		System.out.println("aはbより小さいか → "+(a<b));
 	}
 }
+
+
+//////////////////////////////////////////////////////
+//		System.out.print("aはbより大きいか → ");
+//		if(a>b) {
+//			System.out.println("true");
+//		}else {
+//			System.out.println("false");
+//		}
+//	}
+//}
+//////////////////////課題4///////////////////////////
+//	public static void main(String[] args) {
+//
+//		double height; //身長
+//		double weight; //体重
+//
+//		height = 172;
+//		weight = 46;
+//
+//		System.out.println(height * height * 22);
+//		System.out.println(weight/(height*height));
+//
+//	}
+//}
 
 //////////////////////課題3///////////////////////////
 //	public static void main(String[] args) {
