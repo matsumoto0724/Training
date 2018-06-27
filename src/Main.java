@@ -1,17 +1,37 @@
 
 public class Main {
 
+
 //////////////////////課題8///////////////////////////
 	public static void main(String[] args) {
 
 		boolean a = true;
-		boolean b = false;
-
-		System.out.println(a == b);
-		System.out.println(a || b);
-		System.out.println(a != b);
+		boolean b = true;
+		System.out.println(a&&b);
+		System.out.println(a||b);
+		System.out.println(a!=b);
 	}
 }
+//////////////////////////////////////////////////////
+//		if(a==b) {
+//			System.out.println(true);
+//		}else {
+//			System.out.println(false);
+//		}
+//
+//		if(a||b) {
+//			System.out.println(true);
+//		}else {
+//			System.out.println(false);
+//		}
+//
+//		if(a!=b) {
+//			System.out.println(true);
+//		}else {
+//			System.out.println(false);
+//		}
+//	}
+//}
 //////////////////////課題7///////////////////////////
 //	public static void main(String[] args) {
 //
