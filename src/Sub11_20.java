@@ -1,4 +1,3 @@
-
 public class Sub11_20 {
 
 //////////////////////課題13///////////////////////////
@@ -24,31 +23,38 @@ public class Sub11_20 {
 	 */
 //足し算
 	static void plus(int a, int b) {
-		System.out.println("5+5=" + (a+b));
+
+		int c = a+b;
+		System.out.println(a+"+"+b+"="+c);
 	}
 
 //	引き算
 	static void minus(int a, int b) {
-		System.out.println("20-10="+(a-b));
+
+		int c = a-b;
+		System.out.println(a+"-"+b+"="+c);
 	}
 
 //	掛け算
 	static void multiplication(int a, int b) {
-		System.out.println("2×5="+a*b);
+
+		int c = a*b;
+		System.out.println(a+"×"+b+"="+c);
 	}
 
 //	割り算
 	static void division(int a, int b) {
-		System.out.println("10÷2="+a/b);
+		int c = a/b;
+		System.out.println(a+"÷"+b+"="+c);
 	}
 
 //	剰余
 	static void rest(int a,int b) {
 
-		int c4 = a/b; //割
-		int d4 = a%b; //余
+		int c = a/b; //割
+		int d = a%b; //余
 
-		System.out.println("23÷10="+ c4 +" 余り"+d4);
+		System.out.println(a+"÷"+b+"="+c +"余り"+d);
 	}
 }
 //////////////////////課題12///////////////////////////
