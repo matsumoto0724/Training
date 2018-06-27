@@ -1,17 +1,28 @@
 
 public class Main {
 
-//////////////////////課題7///////////////////////////
+//////////////////////課題8///////////////////////////
 	public static void main(String[] args) {
 
-		int a = 1;
-		int b = 2;
+		boolean a = true;
+		boolean b = false;
 
-		System.out.println("aはbより大きいか → " +(a>b));
-		System.out.println("aとbは等しいか → "+(a==b));
-		System.out.println("aはbより小さいか → "+(a<b));
+		System.out.println(a == b);
+		System.out.println(a || b);
+		System.out.println(a != b);
 	}
 }
+//////////////////////課題7///////////////////////////
+//	public static void main(String[] args) {
+//
+//		int a = 1;
+//		int b = 2;
+//
+//		System.out.println("aはbより大きいか → " +(a>b));
+//		System.out.println("aとbは等しいか → "+(a==b));
+//		System.out.println("aはbより小さいか → "+(a<b));
+//	}
+//}
 
 
 //////////////////////////////////////////////////////
