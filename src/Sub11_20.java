@@ -8,14 +8,47 @@ public class Sub11_20 {
 
 	public static void main(String[]args) {
 
-		minus(23,10); //メソッド呼出(引数入力)
+		//メソッド呼出(引数入力)
+		plus(5,5);
+		minus(10,5);
+		multiplication(2,5);
+		division(10,2);
+		rest(23,10);
+
 	}
-	static void/*戻り値無*/ minus(int a,int b) {
+	/**
+	 * 四則演算をする
+	 * @param a
+	 * @param b
+	 * @author maita
+	 */
+//足し算
+	static void plus(int a, int b) {
+		System.out.println("5+5=" + (a+b));
+	}
 
-		int c = a/b; //割
-		int d = a%b; //余
+//	引き算
+	static void minus(int a, int b) {
+		System.out.println("20-10="+(a-b));
+	}
 
-		System.out.println("a÷"+"b="+ c/*割*/ +" 余り"+d);
+//	掛け算
+	static void multiplication(int a, int b) {
+		System.out.println("2×5="+a*b);
+	}
+
+//	割り算
+	static void division(int a, int b) {
+		System.out.println("10÷2="+a/b);
+	}
+
+//	剰余
+	static void rest(int a,int b) {
+
+		int c4 = a/b; //割
+		int d4 = a%b; //余
+
+		System.out.println("23÷10="+ c4 +" 余り"+d4);
 	}
 }
 //////////////////////課題12///////////////////////////
@@ -29,7 +62,7 @@ public class Sub11_20 {
 //		int arg2 = 4;
 //		int arg3 = 6;
 //		double ave1 = average(arg1,arg2,arg3);
-//		//double型の戻り値を受け取る→double型の変数作成 = 実引数⇔仮引数
+//		//double型の戻り値を受け取る→double型の変数作成,実引数(intのデータ型必要無)
 //		System.out.println(ave1);
 //
 //	}
