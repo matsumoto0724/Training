@@ -1,26 +1,43 @@
 
 public class Sub11_20 {
 
+//////////////////////課題13///////////////////////////
+/*	内容
+	2つの整数(int型)を引数で受け、その四則演算と剰余を計算して表示するメソッドを作成し
+	適当な引数を指定してmainメソッドを呼び出して、戻り値を画面に表示しなさい*/
+
+	public static void main(String[]args) {
+
+		minus(23,10); //メソッド呼出(引数入力)
+	}
+	static void/*戻り値無*/ minus(int a,int b) {
+
+		int c = a/b; //割
+		int d = a%b; //余
+
+		System.out.println("a÷"+"b="+ c/*割*/ +" 余り"+d);
+	}
+}
 //////////////////////課題12///////////////////////////
 /*	内容：
 	3つの整数を引数で受け、その平均値をdoubleの戻り値で返すメソッドになっている。
 	このメソッドを呼び出して、戻り値を画面に表示しなさい*/
 
-	public static void main(String[] args) {
-
-		int arg1 = 2;
-		int arg2 = 4;
-		int arg3 = 6;
-		double ave1 = average(arg1,arg2,arg3);
-		//double型の戻り値を受け取る→double型の変数作成 = 実引数⇔仮引数
-		System.out.println(ave1);
-
-	}
-	static double average(int arg1, int arg2, int arg3) { //double型で戻す+average+(整数int)仮引数
-		double ave = (arg1 + arg2 + arg3)/3.0; //double型の変数 = 仮引数計算
-		return ave; //計算結果を戻す
-	}
-}
+//	public static void main(String[] args) {
+//
+//		int arg1 = 2;
+//		int arg2 = 4;
+//		int arg3 = 6;
+//		double ave1 = average(arg1,arg2,arg3);
+//		//double型の戻り値を受け取る→double型の変数作成 = 実引数⇔仮引数
+//		System.out.println(ave1);
+//
+//	}
+//	static double average(int arg1, int arg2, int arg3) { //double型で戻す+average+(整数int)仮引数
+//		double ave = (arg1 + arg2 + arg3)/3.0; //double型の変数 = 仮引数計算
+//		return ave; //計算結果を戻す
+//	}
+//}
 //////////////////////課題11///////////////////////////
 
 //	内容：メソッドを呼び出して戻り値を画面に表示しなさい
