@@ -1,33 +1,50 @@
 public class Sub11_20 {
 
+//////////////////////課題18///////////////////////////
+
+	/* 内容
+	   int型の変数を適当な値で初期化し、変数の値が偶数なら「偶数です」、奇数なら「奇数です」と画面表示しなさい */
+
+	public static void main(String[]args) {
+
+		int a = 4; //intの変数に適当な値を入れる
+
+		if(a % 2 == 0) { //2で割り切れるものを偶数割り切れないものを奇数とした
+			System.out.println("偶数です");
+		}else {
+			System.out.println("奇数です");
+		}
+
+	}
+}
 //////////////////////課題17///////////////////////////
 	/* 内容
 	   3つの引数を持つメソッドaverageを作成しなさい。
 	   引数がint型の3引数であれば、その平均値をdoubleの型の戻り値で返します。
 	   引数がStringの型の3引数であれば、文字列長の平均を戻り値で返します。 */
 
-	public static void main(String[]args) {
+//	public static void main(String[]args) {
 
-	int a = 2;
-	int b = 3;
-	int c = 4;
-
-	String d = "aaa";
-	String e = "iii";
-	String f = "ueo";
-
-	System.out.println((a+b+c)/3.0);//(2+3+4)/3.0
-	System.out.println((d.length()+e.length()+f.length())/3.0); //(dの文字列(aaa)+eの文字列(iii)+fの文字列(ueo))/3.0
-
-	}
-	static double average(int a,int b,int c) {
-		return a+b+c;
-	}
-	static String average(String d,String e, String f) {
-		return d+e+f;
-
-	}
-}
+//	int a = 2;
+//	int b = 3;
+//	int c = 4;
+//
+//	String d = "aaa";
+//	String e = "iii";
+//	String f = "ueo";
+//
+//	System.out.println((a+b+c)/3.0);//(2+3+4)/3.0
+//	System.out.println((d.length()+e.length()+f.length())/3.0); //(dの文字列(aaa)+eの文字列(iii)+fの文字列(ueo))/3.0
+//
+//	}
+//	static double average(int a,int b,int c) {
+//		return a+b+c;
+//	}
+//	static String average(String d,String e, String f) {
+//		return d+e+f;
+//
+//	}
+//}
 //////////////////////課題14///////////////////////////
 	/*内容
 	 秒単位の時間(long型)を引数で受けて、日時分秒へ変換して表示するメソッドを作成しなさい。
