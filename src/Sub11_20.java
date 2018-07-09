@@ -1,22 +1,40 @@
 public class Sub11_20 {
 
+//////////////////////課題19///////////////////////////
+/*	内容
+	2つのint型の変数を適当な値で初期化し、大きいほうの値を画面に表示しなさい*/
+
+	public static void main(String[]args) {
+
+		int a =30;
+		int b =20;
+
+		if(a>b) { //aがbより大きい場合aを表示
+			System.out.println(a);
+		}else if(a<b){ //aよりbが大きい場合bを表示
+			System.out.println(b);
+		}else { //それ以外
+			System.out.println("エラー");
+		}
+	}
+}
 //////////////////////課題18///////////////////////////
 
 	/* 内容
 	   int型の変数を適当な値で初期化し、変数の値が偶数なら「偶数です」、奇数なら「奇数です」と画面表示しなさい */
 
-	public static void main(String[]args) {
-
-		int a = 4; //intの変数に適当な値を入れる
-
-		if(a % 2 == 0) { //2で割り切れるものを偶数割り切れないものを奇数とした
-			System.out.println("偶数です");
-		}else {
-			System.out.println("奇数です");
-		}
-
-	}
-}
+//	public static void main(String[]args) {
+//
+//		int a = 4; //intの変数に適当な値を入れる
+//
+//		if(a % 2 == 0) { //2で割り切れるものを偶数割り切れないものを奇数とした
+//			System.out.println("偶数です");
+//		}else {
+//			System.out.println("奇数です");
+//		}
+//
+//	}
+//}
 //////////////////////課題17///////////////////////////
 	/* 内容
 	   3つの引数を持つメソッドaverageを作成しなさい。
