@@ -1,26 +1,56 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 public class Sub11_20 {
 
+//////////////////////課題23///////////////////////////
+	/*	内容
+	int型変数を適当な値で初期化し、変数の値が0ならSunday、1ならMonday、･･･、6ならSaturdat、それ以外はErrorと*/
+
+	public static void main(String[]args) {
+
+		int week = 0;
+		switch(week) {
+		case 0:
+			System.out.println("Today's Sunday");
+			break;
+		case 1:
+			System.out.println("Today's Monday");
+			break;
+		case 2:
+			System.out.println("Today's Tuesday");
+			break;
+		case 3:
+			System.out.println("Today's Wednesday");
+			break;
+		case 4:
+			System.out.println("Today's Thursday");
+			break;
+		case 5:
+			System.out.println("Today's Friday");
+			break;
+		case 6:
+			System.out.println("Today's Saturday");
+			break;
+		default:
+			System.out.println("Error");
+		}
+	}
+}
 //////////////////////課題22///////////////////////////
 /*	内容
 	適当な値が格納されたint型変数を3つ宣言し、中間の大きさのものを調べて表示しなさい*/
 
 // if文での出し方が思いつかなかったため一旦List内でソートして真ん中の数字を取ってくるものを作成。一旦次の演習問題に進行
-	public static void main(String[]args) {
-
-		List abc = new ArrayList();
-		//Listに適当な数値を３つ
-		abc.add(40);
-		abc.add(20);
-		abc.add(50);
-
-		Collections.sort(abc);//ソート
-		System.out.println(abc.get(abc.size()/2));//配列内の要素が3。 半分(2)で割って1(小数点切り捨て)  配列の0,1,2の割って出た数字(配列番号の1)をとってくる
-	}
-}
+//	public static void main(String[]args) {
+//
+//		List abc = new ArrayList();
+//		//Listに適当な数値を３つ
+//		abc.add(40);
+//		abc.add(20);
+//		abc.add(50);
+//
+//		Collections.sort(abc);//ソート
+//		System.out.println(abc.get(abc.size()/2));//配列内の要素が3。 半分(2)で割って1(小数点切り捨て)  配列の0,1,2の割って出た数字(配列番号の1)をとってくる
+//	}
+//}
 //////////////////////課題20///////////////////////////
 /*	内容
 	int型の引数を受け取り、その値の絶対値を戻り値で返すメソッドを作りなさい。
