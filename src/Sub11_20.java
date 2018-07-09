@@ -1,26 +1,43 @@
 public class Sub11_20 {
 
+//////////////////////課題26///////////////////////////
+/*	内容
+	引数でint型の1次元配列を受け取り、すべての要素を表示するメソッドを作成しなさい
+	mainメソッドで要素数3のintがt配列を作り、それを引数として上記のメソッドを呼び出しなさい*/
+
+	public static void main(String[]args) {
+
+		int a[] = {3,6,9}; //配列作成
+		row(a); //呼び出し
+	}
+	static void row(int a[]) {//配列を受け取る  呼び出されるメソッド
+
+		for(int b : a) { //配列aをbに代入
+			System.out.println(b);
+		}
+	}
+}
 //////////////////////課題25///////////////////////////
 /*	内容
 	要素数3のint型配列aとbを作り、配列aは適当な値で初期化しなさい。
 	aの要素をすべてbにコピーして、bの要素を画面に表示して確認しなさい。*/
 
-	public static void main(String[]args) {
-
-		int a[] = new int[3];
-		int b[] = new int[3];
-
-		a[0] = 1;
-		a[1] = 2;
-		a[2] = 3;
-
-		for(int i = 0 ; i<a.length;i++) { //配列の長さ分繰り返す
-			b[i] = a[i]; //bの配列にaを代入
-
-			System.out.println(b[i]);
-		}
-	}
-}
+//	public static void main(String[]args) {
+//
+//		int a[] = new int[3];
+//		int b[] = new int[3];
+//
+//		a[0] = 1;
+//		a[1] = 2;
+//		a[2] = 3;
+//
+//		for(int i = 0 ; i<a.length;i++) { //配列の長さ分繰り返す
+//			b[i] = a[i]; //bの配列にaを代入
+//
+//			System.out.println(b[i]);
+//		}
+//	}
+//}
 //////////////////////課題24///////////////////////////
 /*	内容
  	2つのint型変数に年と月と格納して、その月が何日まであるかを画面に表示しなさい*/
