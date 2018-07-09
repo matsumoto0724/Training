@@ -1,23 +1,45 @@
 public class Sub11_20 {
 
+//////////////////////課題20///////////////////////////
+/*	内容
+	int型の引数を受け取り、その値の絶対値を戻り値で返すメソッドを作りなさい。
+	mainメソッドから適当な引数でメソッドを呼び出して、戻り値を画面に表示しなさい。*/
+
+	public static void main(String[]args) {
+
+		int a = number(-10);//numberメソッド引数を渡す
+		System.out.println(a); //絶対値に変換された引数を表示
+
+		//直接表示させる場合(補足メモ)
+		System.out.println();
+		int b = -123;
+		System.out.println(Math.abs(b));
+	}
+
+	static int number(int num) {
+		num = Math.abs(num); //math.absで(num)の絶対値を求める
+		return num; //絶対値を返す
+
+	}
+}
 //////////////////////課題19///////////////////////////
 /*	内容
 	2つのint型の変数を適当な値で初期化し、大きいほうの値を画面に表示しなさい*/
 
-	public static void main(String[]args) {
-
-		int a =30;
-		int b =20;
-
-		if(a>b) { //aがbより大きい場合aを表示
-			System.out.println(a);
-		}else if(a<b){ //aよりbが大きい場合bを表示
-			System.out.println(b);
-		}else { //それ以外
-			System.out.println("エラー");
-		}
-	}
-}
+//	public static void main(String[]args) {
+//
+//		int a =30;
+//		int b =20;
+//
+//		if(a>b) { //aがbより大きい場合aを表示
+//			System.out.println(a);
+//		}else if(a<b){ //aよりbが大きい場合bを表示
+//			System.out.println(b);
+//		}else { //それ以外
+//			System.out.println("エラー");
+//		}
+//	}
+//}
 //////////////////////課題18///////////////////////////
 
 	/* 内容
