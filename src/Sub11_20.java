@@ -1,24 +1,48 @@
 public class Sub11_20 {
 
+//////////////////////課題31///////////////////////////
+	/*	内容
+	int型の変数nとmに適当な値を代入し、nのm乗(累乗)を計算して結果を表示しなさい*/
+
+	public static void main(String[]args) {
+
+		int n = 1;//0にした場合0*になり0にしかならない
+		int a = 2;
+		int m = 3; //乗数
+
+		for(int i = 0; i<m;i++) {//0からmまで繰り返し処理 *aをm回繰り返す
+			n = a*n;//nにa*n(1)を代入
+		}
+		System.out.println(a+"の"+m+"乗は"+n);
+	}
+}
+////////////////////課題31<別パターン>///////////////////////////
+//	public static void main(String[]args) {
+//
+//		int n =5;
+//		int m =3;
+//		System.out.println(Math.pow(n, m));
+//	}
+//}
 //////////////////////課題30///////////////////////////
 	/*	内容
 	int型の変数nに適当な値を代入し、１からnまでの偶数の和を計算して表示しなさい*/
 
-	public static void main(String[]args) {
-
-	int n =10; //適当な値
-	int start =1; //1からnまで
-	int b = 0;
-
-		while(start <= n) {
-			if(start%2==0) {
-			b= b+start;
-			}
-			start++;
-		}
-		System.out.println(b);
-	}
-}
+//	public static void main(String[]args) {
+//
+//	int n =10; //適当な値
+//	int start =1; //1からnまで
+//	int b = 0;
+//
+//		while(start <= n) {
+//			if(start%2==0) {
+//			b= b+start;
+//			}
+//			start++;
+//		}
+//		System.out.println(b);
+//	}
+//}
 //////////////////////課題29///////////////////////////
 	/*	内容
 	int型の変数nに適当な値を代入し、1からnまでの整数の和を計算して表示しなさい*/
