@@ -1,21 +1,35 @@
+import java.util.Arrays;
+import java.util.Comparator;
+
 public class Sub11_20 {
 
+//////////////////////課題32///////////////////////////
+	/*	内容
+	要素数10のint型配列aを適当な値で初期化して、逆順に画面に表示しなさい*/
+
+	public static void main(String[]args) {
+
+		Integer a[] = {1,5,2,9,3,6,3,7,4,8};
+			Arrays.sort(a,Comparator.reverseOrder());
+			System.out.println(Arrays.toString(a));
+	}
+}
 //////////////////////課題31///////////////////////////
 	/*	内容
 	int型の変数nとmに適当な値を代入し、nのm乗(累乗)を計算して結果を表示しなさい*/
 
-	public static void main(String[]args) {
-
-		int n = 1;//0にした場合0*になり0にしかならない
-		int a = 2;
-		int m = 3; //乗数
-
-		for(int i = 0; i<m;i++) {//0からmまで繰り返し処理 *aをm回繰り返す
-			n = a*n;//nにa*n(1)を代入
-		}
-		System.out.println(a+"の"+m+"乗は"+n);
-	}
-}
+//	public static void main(String[]args) {
+//
+//		int n = 1;//0にした場合0*になり0にしかならない
+//		int a = 2;
+//		int m = 3; //乗数
+//
+//		for(int i = 0; i<m;i++) {//0からmまで繰り返し処理 *aをm回繰り返す
+//			n = a*n;//nにa*n(1)を代入
+//		}
+//		System.out.println(a+"の"+m+"乗は"+n);
+//	}
+//}
 ////////////////////課題31<別パターン>///////////////////////////
 //	public static void main(String[]args) {
 //
