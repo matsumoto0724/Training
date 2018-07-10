@@ -1,29 +1,58 @@
 public class Sub11_20 {
 
+//////////////////////課題35///////////////////////////
+	/*	内容
+	ループ内でcontinue文を使って、1から100までの偶数の和を計算して画面に表示しなさい*/
+
+	public static void main(String[]args) {
+
+		int b = 100;
+		int c = 0;
+		for(int a =1; a<=b; a++) {
+			if(a%2==0) {
+				c +=a;
+				continue;
+			}
+		}
+		System.out.println(c);
+	}
+}
+//////////////////////課題34///////////////////////////
+/*	内容
+	1からnの合計が1000を超える最小のnを画面に表示しなさい。繰り返しの構文にはwhile(true){}の無限ループを使うこと。*/
+
+//	public static void main(String[]args) {
+//
+//
+//
+//
+//
+//	}
+//}
 //////////////////////課題33///////////////////////////
 	/*	内容
 	要素数10のint型配列aを適当な値で初期化して、全要素の平均を計算し、平均よりも大きい値を持つ要素の個体を調べて画面に表示しなさい*/
 
-	public static void main(String[]args) {
-
-		int a[] = {1,3,5,7,9,11,13,15,17,19};
-		int c = 0;
-
-		for(int i = 0;i<a.length;i++) {
-			c = c+a[i]; //配列内の合計値がcに代入される
-		}
-
-		int ave = c/a.length;//平均値が"ave"に代入  合計値/文字列数=平均値
-		int aveup =0;//平均値を入れる箱
-		for(int i = 0;i<a.length;i++) {
-			if(a[i]>ave) {//平均より上の数字があった場合
-				aveup++; //上の数字の個数分増やす
-			}
-		}
-		System.out.println("平均値 "+ave);
-		System.out.println("平均値以上の数の個数 "+aveup);
-	}
-}
+//	public static void main(String[]args) {
+//
+//		int a[] = {1,3,5,7,9,11,13,15,17,19};
+//		int c = 0;
+//
+//		for(int i = 0;i<a.length;i++) {
+//			c = c+a[i]; //配列内の合計値がcに代入される
+//		}
+//
+//		int ave = c/a.length;//平均値が"ave"に代入  合計値/文字列数=平均値
+//		int aveup =0;//平均値を入れる箱
+//		for(int i = 0;i<a.length;i++) {
+//			if(a[i]>ave) {//平均より上の数字があった場合
+//				aveup++; //上の数字の個数分増やす
+//			}
+//		}
+//		System.out.println("平均値 "+ave);
+//		System.out.println("平均値以上の数の個数 "+aveup);
+//	}
+//}
 //////////////////////課題32///////////////////////////
 	/*	内容
 	要素数10のint型配列aを適当な値で初期化して、逆順に画面に表示しなさい*/
